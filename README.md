@@ -1,3 +1,4 @@
+Hi im john Charles Rosal and this is my interactive components:
 Navigation
 The navigation bar at the top of the page allows users to switch between different sections of the portfolio.
 
