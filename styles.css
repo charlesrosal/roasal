@@ -1,0 +1,292 @@
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.job-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-container img {
+    width: 400px;
+
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.job-container p {
+    font-size: 20px;
+
+    margin-top: 15px;
+    color: #333;
+}
+
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-container img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-container p {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+}
+
+
+.trainings-box {
+    background-color: #f8f9fa;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Contact Us Section */
+.contact-container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.contact-container label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+.contact-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-container button {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-container button:hover {
+    background-color: #0056b3;
+}
+
+
+.trainings-box p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.profile-container img {
+    width: 200px;
+
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.education-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    text-align: center;
+    max-width: 350px;
+}
+
+.image-item img {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.image-item p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+
+nav ul li a:hover {
+    background-color: lightblue;
+    color: #333;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+
+    .menu-toggle {
+        display: block;
+
+    }
+
+    nav ul {
+        display: none;
+
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-align: center;
+        display: block;
+    }
+
+    nav ul.active {
+        display: flex;
+
+    }
+
+    .profile-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-text {
+        font-size: 18px;
+        max-width: 90%;
+    }
+}

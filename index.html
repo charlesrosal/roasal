@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger Icon -->
+            <ul id="nav-menu">
+                <li><a href="#" onclick="showSection('profile')">Profile</a></li>
+                <li><a href="#" onclick="showSection('education')">Education</a></li>
+                <li><a href="#" onclick="showSection('trainings')">Trainings/Seminars</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('experience')">Job Experience</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="profile" class="content active">
+        <h2>Profile</h2>
+        <div class="profile-container">
+            <img src="assets/images/rosalgwaps.jpg" alt="Your Photo">
+            <div class="profile-text">
+                <p>Hello! I’m Charles F. Rosal, currently studying at the Cebu Institute of Technology – University
+                    (CITE). My journey is fueled by the belief that education isn’t just about knowledge, but about
+                    using it to create real change. I approach every challenge with determination, knowing that progress
+                    is made one step at a time.
+
+                    I’m passionate about learning, growing, and sharing what I’ve gained with others. For me, it’s not
+                    just about reaching goals but about enjoying the process and making meaningful connections along the
+                    way.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="education" class="content">
+        <h2>Education</h2>
+        <div class="education-gallery">
+            <div class="image-item">
+                <img src="assets/images/cite.jpg" alt="Graduation Ceremony">
+                <p>This year, I study in CITE, and I’m embracing every opportunity to learn, grow, and push myself
+                    beyond what I thought was possible.</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/High School.jpg" alt="Workshop Participation">
+                <p>From 2016 to 2023, I studied at Canduman National High School, where I faced challenges, built
+                    resilience, and laid the foundation for a future full of possibilities.</p>
+            </div>
+            <div class="image-item">
+                <img src="assets/images/Elem.jpg" alt="Classroom Discussion">
+                <p>From 2011 to 2015, I studied at Canduman Elementary School, where I first discovered the power of
+                    curiosity, hard work, and the importance of believing in myself.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="trainings" class="content">
+        <h2>Seminars & Trainings</h2>
+        <div class="trainings-box">
+            <p><strong>“Leadership and Discipleship Workshop”</strong> – Canduman Community Alliance Church, 2023</p>
+            <p><strong>“Multimedia in Ministry Bootcamp”</strong> – Church Media Team Training, 2022</p>
+            <p><strong>“Basic PC Troubleshooting and Maintenance”</strong> – TESDA, 2022</p>
+            <p><strong>“Creative Content Design Using Canva & Photoshop”</strong> – CITE Student Workshop, 2023</p>
+            <p><strong>“Youth Empowerment through Technology”</strong> – Church Youth Event, 2023</p>
+        </div>
+    </section>
+
+
+
+    <section id="projects" class="content">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <img src="assets/images/project.jpg" alt="Project Image">
+            <p>I made this project in our graphic design subject, and it represents not just my creativity, but my
+                determination to turn ideas into something visually powerful and meaningful.</p>
+        </div>
+    </section>
+
+
+    <section id="experience" class="content">
+        <h2>Job Experience</h2>
+        <div class="job-container">
+            <img src="assets/images/job.jpg" alt="Job Experience">
+            <p>This kind of job was my part-time job, and it taught me the value of hard work, time management, and how
+                every experience contributes to shaping the person I am becoming.</p>
+        </div>
+    </section>
+
+
+    <section id="contact" class="content">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
